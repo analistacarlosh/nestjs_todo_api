@@ -33,3 +33,10 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Local environment
+
+```bash
+# docker run
+$ docker-compose up -d
+```
