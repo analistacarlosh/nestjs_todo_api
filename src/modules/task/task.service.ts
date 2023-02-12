@@ -1,5 +1,6 @@
 import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
+import { IsDate, IsNotEmpty } from 'class-validator';
 
 @Injectable()
 export class TaskService {
@@ -25,7 +26,12 @@ export interface Task extends Document {
 }
 
 export class CreateTaskDto {
+  @IsNotEmpty()
   readonly title: string;
+
+  @IsNotEmpty()
   readonly description: string;
+
+  @IsNotEmpty()
   readonly create_at: Date;
 }

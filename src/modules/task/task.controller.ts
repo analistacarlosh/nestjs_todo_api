@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { CreateTaskDto, Task, TaskService } from './task.service';
+import { Task, TaskService, CreateTaskDto } from './task.service';
 
 @Controller()
 export class TaskController {
