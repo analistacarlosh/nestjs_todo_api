@@ -40,3 +40,21 @@ $ npm run test:cov
 # docker run
 $ docker-compose up -d
 ```
+
+## Tech Stack
+
+ - [x] NestJS
+ - [x] TypeScript
+ - [x] Docker (Api, MongoDb and MongoExpress)
+ - [x] Nosql, Document DB, Mongo
+ - [x] Mongose
+ - [x] Jest e2e
+ - [x] EndPoint Validator, class-validator + DTO
+ - [x] Swagger
+ - [ ] Husky 
+ - [ ] JWT, guard route
+ - [ ] Redis
+ - [ ] MailChimp
+ - [ ] RabbitMq
+ - [ ] GitLab
+ - [ ] AWS

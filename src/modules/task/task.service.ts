@@ -1,6 +1,7 @@
-import { Model } from 'mongoose';
+import { Model, Document } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
-import { IsDate, IsNotEmpty } from 'class-validator';
+import { IsNotEmpty } from 'class-validator';
+import { ApiProperty } from '@nestjs/swagger';
 
 @Injectable()
 export class TaskService {
@@ -19,19 +20,22 @@ export class TaskService {
   }
 }
 
-export interface Task extends Document {
+export class Task extends Document {
   readonly title: string;
   readonly description: string;
   readonly create_at: Date;
 }
 
 export class CreateTaskDto {
+  @ApiProperty()
   @IsNotEmpty()
   readonly title: string;
 
+  @ApiProperty()
   @IsNotEmpty()
   readonly description: string;
 
+  @ApiProperty()
   @IsNotEmpty()
   readonly create_at: Date;
 }

@@ -4,7 +4,6 @@ import { CreateTaskDto, TaskService } from './task.service';
 
 describe('TaskController', () => {
   let controller: TaskController;
-  let service: TaskService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -41,8 +40,6 @@ describe('TaskController', () => {
     }).compile();
 
     controller = module.get(TaskController);
-    service = module.get(TaskService);
-
     jest.useFakeTimers().setSystemTime(new Date('2020-01-01'));
   });
 
