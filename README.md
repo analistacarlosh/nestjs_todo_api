@@ -51,7 +51,7 @@ $ docker-compose up -d
  - [x] Jest e2e
  - [x] EndPoint Validator, class-validator + DTO
  - [x] Swagger
- - [ ] Husky 
+ - [x] Husky 
  - [ ] JWT, guard route
  - [ ] Redis
  - [ ] MailChimp
